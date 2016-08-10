@@ -12,11 +12,11 @@
   </p>
 <% end %>
 <% @nearby_buses.each do |bus| %>
-<p>
-  <strong>Route</strong>:<% bus["Route"] <%><br />
-  <strong>Vehicle</strong>:<% bus["Vehicle"] <%><br />
-  <strong>Next Stop</strong>:<% bus["timepoint"] <%><br />
-</p>
+  <p>
+    <strong>Route</strong>:<% bus["Route"] <%><br />
+    <strong>Vehicle</strong>:<% bus["Vehicle"] <%><br />
+    <strong>Next Stop</strong>:<% bus["timepoint"] <%><br />
+  </p>
 <% end %>
 
 <%= link_to 'Actually, I\'m at...', edit_location_path(@location) %> |
