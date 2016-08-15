@@ -11,11 +11,11 @@
     ... there are no buses close to you.
   </p>
 <% end %>
-<% @nearby_buses.each do |bus| %>
+<% @buses_nearby.each do |bus| %>
   <p>
-    <strong>Route</strong>:<% bus["ROUTE"] <%><br />
-    <strong>Vehicle</strong>:<% bus["VEHICLE"] <%><br />
-    <strong>Next Stop</strong>:<% bus["TIMEPOINT"] <%><br />
+    <strong>Route</strong>:<%= bus["ROUTE"] %><br />
+    <strong>Vehicle</strong>:<%= bus["VEHICLE"] %><br />
+    <strong>Next Stop</strong>:<%= bus["TIMEPOINT"] %><br />
   </p>
 <% end %>
 
