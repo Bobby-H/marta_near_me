@@ -3,13 +3,13 @@
 <head>
   <title>Gmaps</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
+  <script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['google_api_key']%>">
+  </script>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <script type="text/javascript"
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB42OIYmzqQGdyD8hkpUICdefDStIL4dUk">
-  </script>
 
 <%= yield %>
 
