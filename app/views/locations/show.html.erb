@@ -8,6 +8,7 @@
 
 <% if @bus_count == 0 %>
   <p>There are no buses around you.</p>
+  <div class="bus-map" id="map-canvas"></div>
 <% end %>
 <% @buses_nearby.each_with_index do |bus, index| %>
   <p>
